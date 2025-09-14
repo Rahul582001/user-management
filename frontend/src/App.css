@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f4f6fb; margin: 0; color: #222; }
+
+.app-container { max-width: 1100px; margin: 24px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 8px 30px rgba(20,20,40,0.04); }
+
+nav.navbar { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eef2f7; margin-bottom: 16px; }
+nav .brand { font-weight: 700; font-size: 1.2rem; color: #0b5ed7; }
+nav .links a { margin-left: 12px; text-decoration: none; color: #374151; font-weight: 600; }
+nav .links a:hover { color: #0b5ed7; }
+
+.container { padding: 8px 0; }
+
+/* Dashboard list */
+.toolbar { display:flex; justify-content: space-between; align-items:center; margin-bottom: 12px; }
+.btn { padding: 8px 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: 700; }
+.btn.primary { background: #0b76ef; color: white; }
+.btn.danger { background: #e53e3e; color: white; }
+
+/* table / cards */
+.user-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.user-table th, .user-table td { padding: 10px 8px; border-bottom: 1px solid #f0f3f7; text-align: left; }
+.user-table th { background: #fbfdff; font-weight: 700; color: #222; }
+.actions button { margin-right: 8px; }
+
+/* forms */
+.form-card { background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #f0f3f7; }
+.form-row { display:flex; gap: 10px; margin-bottom: 10px; }
+.form-row label { width: 120px; font-weight: 600; align-self: center; }
+.form-row input { flex:1; padding: 8px; border-radius: 6px; border: 1px solid #e2e8f0; }
+
+/* small screens */
+@media (max-width: 700px) {
+  .form-row { flex-direction: column; }
+  .form-row label { width: auto; }
+}
